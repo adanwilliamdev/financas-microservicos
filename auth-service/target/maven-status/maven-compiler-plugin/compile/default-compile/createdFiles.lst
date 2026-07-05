@@ -1,0 +1,10 @@
+com\financas\auth\service\service\UsuarioService.class
+com\financas\auth\service\dto\AuthRequest.class
+com\financas\auth\service\dto\AuthResponse.class
+com\financas\auth\service\dto\RegisterRequest.class
+com\financas\auth\service\repository\UsuarioRepository.class
+com\financas\auth\service\config\DataInitializerRunner.class
+com\financas\auth\service\model\Usuario.class
+com\financas\auth\service\AuthServiceApplication.class
+com\financas\auth\service\config\SecurityConfig.class
+com\financas\auth\service\controller\AuthController.class

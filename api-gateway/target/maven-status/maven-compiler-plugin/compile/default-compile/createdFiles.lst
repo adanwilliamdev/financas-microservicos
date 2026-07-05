@@ -1,0 +1,4 @@
+com\financas\api\gateway\config\GatewayConfig.class
+com\financas\api\gateway\config\SecurityConfig.class
+com\financas\api\gateway\ApiGatewayApplication.class
+com\financas\api\gateway\controller\TestController.class

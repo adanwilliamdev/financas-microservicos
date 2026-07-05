@@ -1,0 +1,10 @@
+C:\Projetos\financas-microservicos\auth-service\src\main\java\com\financas\auth\service\config\SecurityConfig.java
+C:\Projetos\financas-microservicos\auth-service\src\main\java\com\financas\auth\service\repository\UsuarioRepository.java
+C:\Projetos\financas-microservicos\auth-service\src\main\java\com\financas\auth\service\dto\RegisterRequest.java
+C:\Projetos\financas-microservicos\auth-service\src\main\java\com\financas\auth\service\AuthServiceApplication.java
+C:\Projetos\financas-microservicos\auth-service\src\main\java\com\financas\auth\service\dto\AuthRequest.java
+C:\Projetos\financas-microservicos\auth-service\src\main\java\com\financas\auth\service\controller\AuthController.java
+C:\Projetos\financas-microservicos\auth-service\src\main\java\com\financas\auth\service\model\Usuario.java
+C:\Projetos\financas-microservicos\auth-service\src\main\java\com\financas\auth\service\dto\AuthResponse.java
+C:\Projetos\financas-microservicos\auth-service\src\main\java\com\financas\auth\service\config\DataInitializerRunner.java
+C:\Projetos\financas-microservicos\auth-service\src\main\java\com\financas\auth\service\service\UsuarioService.java

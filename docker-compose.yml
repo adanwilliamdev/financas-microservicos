@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  # Auth Service Database
+  auth-db:
+    image: postgres:15-alpine
+    container_name: auth-db
+    environment:
+      POSTGRES_DB: auth_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 9857Dudu
+    ports:
+      - "5432:5432"
+    volumes:
+      - auth-db-data:/var/lib/postgresql/data
+    networks:
+      - microservices-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Transaction Service Database
+  transaction-db:
+    image: postgres:15-alpine
+    container_name: transaction-db
+    environment:
+      POSTGRES_DB: transaction_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 9857Dudu
+    ports:
+      - "5433:5432"
+    volumes:
+      - transaction-db-data:/var/lib/postgresql/data
+    networks:
+      - microservices-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Report Service Database
+  report-db:
+    image: postgres:15-alpine
+    container_name: report-db
+    environment:
+      POSTGRES_DB: report_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 9857Dudu
+    ports:
+      - "5434:5432"
+    volumes:
+      - report-db-data:/var/lib/postgresql/data
+    networks:
+      - microservices-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  microservices-network:
+    driver: bridge
+
+volumes:
+  auth-db-data:
+  transaction-db-data:
+  report-db-data:
