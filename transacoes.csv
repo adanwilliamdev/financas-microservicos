@@ -1,0 +1,4 @@
+id,descricao,valor,data,categoria,tipo,observacao
+1,Salário Janeiro,50000.0,2026-07-01,Salário,RECEITA,
+2,Mercado,350.5,2026-07-02,Alimentação,DESPESA,
+3,Transporte,150.0,2026-07-03,Transporte,DESPESA,
